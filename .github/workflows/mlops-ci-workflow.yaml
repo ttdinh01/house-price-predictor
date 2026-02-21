@@ -34,7 +34,7 @@ jobs:
       - name: Run featrure engineering
         run: |
           python src/features/engineer.py \
-            --input data/processed/cleaned_house_data.csv \ 
+            --input data/processed/cleaned_house_data.csv \
             --output data/processed/featured_house_data.csv \
             --preprocessor models/trained/preprocessor.pkl
 
@@ -44,4 +44,4 @@ jobs:
             --config configs/model_config.yaml \
             --data data/processed/featured_house_data.csv \
             --models-dir models \
-            --mlflow-tracking-uri http://localhost:5555 \
+            --mlflow-tracking-uri http://localhost:5555
