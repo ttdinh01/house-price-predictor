@@ -12,7 +12,7 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-  -name: metrics
+  - name: metrics
     port: 9100
     targetPort: 9100
   selector:
