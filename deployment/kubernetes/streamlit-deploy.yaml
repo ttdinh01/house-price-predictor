@@ -18,7 +18,8 @@ spec:
         app: streamlit
     spec:
       containers:
-      - image: kmunix/streamlit:v4
+      - image: kmunix/streamlit:latest
+        imagePullPolicy: Always
         name: streamlit
         ports:
         - containerPort: 8501
